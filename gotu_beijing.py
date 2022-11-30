@@ -25,7 +25,7 @@ if __name__ == '__main__':
     while True:
         try:
             res = json.loads(push())
-            State = q["data"]['checkState']
+            State = res["data"]['checkState']
             if State != checkState and checkState != 0 :
                 checkState = State
                 print("状态发生改变！！！！请尽快查看")
